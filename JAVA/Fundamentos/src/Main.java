@@ -34,7 +34,7 @@ public class Main {
          usado no carteres. É obrigatorio ter S maisculo.
          ex.: String nome = "Vinicio";
 
-         char - Seria para caracter, guardando caracteres. Podendo guardar somente uma letra. Ele é usado com aspas
+         char - Seria para caracter, guardando caracteres. Podendo guardar somente uma letra ou caracter. Ele é usado com aspas
          simples ''.
          ex.: char letra = 'A'
 
@@ -81,6 +81,68 @@ public class Main {
 
         != - Ele informa que se for diferente.
         ex.: System.out.println(10 != 5)
+
+        Casting - Seria quando você quer que o resultado da seja outro tipo de dado
+        ex.: double media = "(double)"(num1 + num2 + num3) / 3;
+        O (double) seria o Casting, ele que transforma o resultado dessa variavel em double
          */
+        /*
+        VARIAVEIS - TRANSFORMANDO O TIPO DE DADOS
+
+        Scanner - Ele serve pra fazer a leitura de uma informação que vai ser passada pelo usuario. Ele seria a mesma
+        coisa que o ReadLine.
+        ex.:    System.out.println("Me informe os números: ");
+                Scanner sc = new Scanner(System.in);
+
+         sc.nextInt() - Esse ele vai avisa que vai ser um int e não uma string. Mas caso queira fazer uma string você
+         tem que colocar o nextLine. Vai ser a mesma coisa que o Parse.
+         ex.:   System.out.println("Me informe os números: ");
+                Scanner sc = new Scanner(System.in);
+                int num1 = sc.nextInt();
+         ex.:   System.out.println("Me informe seu nome: ")
+                Scanner sc = new Scanner(System.in)
+                String nome = sc.nextLine();
+         */
+        /*
+        ESTRUTURAS CONDICIONAIS
+
+        IF - Seria o "SE", usado pra SE a informação for a regra do parametro desse IF ele vai rodar o bloco de codigo.
+        éx.:    int num = 5;
+                if(num < 10)
+                {
+                    System.out.Println("Num é menor que 10!!")
+                }
+
+        ELSE IF - Ele seriaa mesma coisa que IF, mas quando ja existe o IF, por questão de nomenclatura, quando ter um
+        segundo IF, vai ser ELSE IF.
+        ex.:    int num = 5;
+                if(num < 10)
+                {
+                    System.out.Println("Num é menor que 10!!")
+                }
+                else if(10 < num)
+                {
+                    System.out.Println("num é maior que 10!");
+                }
+        ELSE - Ele seria o SE NAO, ele basicamente vai ver todas as regras dos parametros dos if e else if e vai criar
+        o seu proprio parametro com qualquer informação que foi diferente do IF e ELSE IF.
+        ex.:    int num = 5;
+                if(num < 10)
+                {
+                    System.out.Println("Num é menor que 10!!")
+                }
+                else if(10 < num)
+                {
+                    System.out.Println("num é maior que 10!");
+                }
+                else
+                {
+                    System.out.println("Isso não é um numero inteiro!")
+                }
+
+
+
+         */
+
     }
 }

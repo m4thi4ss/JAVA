@@ -70,7 +70,8 @@ public class Main {
         int num2 = sc.nextInt();
         int num3 = sc.nextInt();
 
-        int media = (num1 + num2 + num3) / 3;
+
+        double media = (double)(num1 + num2 + num3) / 3;
 
         System.out.println("Segue média dos números informados:" + media);*/
 
@@ -131,7 +132,7 @@ public class Main {
         /*11. Usando o Operador Lógico "OU" (||)**
 
         Declare uma variável booleana temCartao = true e uma variável double compra = 50.0. O cliente ganha um desconto se temCartao for verdadeiro
-        OU se o valor da compra for maior que 100.0. Escreva a expressão lógica e imprima o resultado (`true` ou `false`).*/
+        OU se o valor da compra for maior que 100.0. Escreva a expressão lógica e imprima o resultado (`true` ou `false`).
 
         boolean temCartao = true;
         double compra = 50.0;
@@ -154,7 +155,7 @@ public class Main {
             System.out.println("Você não tem desconto!");
         }
 
-
+*/
 
 
 
