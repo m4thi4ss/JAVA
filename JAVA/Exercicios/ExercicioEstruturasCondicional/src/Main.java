@@ -108,7 +108,7 @@ Usando uma estrutura **`if/else`**, exiba a mensagem "A tarefa está pendente!" 
 
         Crie um programa que declare duas variáveis: **`idade`**; e **`boolean acompanhado`**;.
         Use uma estrutura **`if`** com operadores lógicos (**`||`** e **`&&`**) para imprimir "Entrada permitida."
-         ou "Entrada negada." com base nessas condições.*/
+         ou "Entrada negada." com base nessas condições.
 
 
         int idade;
@@ -138,7 +138,7 @@ Usando uma estrutura **`if/else`**, exiba a mensagem "A tarefa está pendente!" 
         else
         {
             System.out.println("Você não esta autorizado!");
-        }
+        }*/
 
         /*6. Aprovação de Empréstimo**
 
@@ -147,7 +147,169 @@ Usando uma estrutura **`if/else`**, exiba a mensagem "A tarefa está pendente!" 
 
         Crie um programa com as variáveis **`double salarioMensal`**; e **`boolean possuiRestricao`** .
         Use o operador lógico "E" (**`&&`**) em uma estrutura **`if`** para determinar e imprimir
-        "Empréstimo aprovado." ou "Empréstimo negado."*/
+        "Empréstimo aprovado." ou "Empréstimo negado."
+
+        double salario;
+        boolean aprovado;
+
+        System.out.println("Me informe seu salario:");
+        Scanner sc = new Scanner(System.in);
+        salario = sc.nextDouble();
+
+        System.out.println("Tem retrições no banco? \n true - Pra sim \n false - Pra não");
+        Scanner scc = new Scanner(System.in);
+        aprovado = sc.nextBoolean();
+
+        if(salario > 2000.00 && aprovado == true)
+        {
+            System.out.println("Empréstimo aprovado");
+        }
+        else
+        {
+            System.out.println("Empréstimo negado");
+        }
+*/
+
+
+
+        /*7. Classificação de Média Escolar Completa**
+
+         Crie um programa que solicita ao usuário que digite uma nota (um valor
+
+         **`double`**). Utilizando uma estrutura **`if/ else if /else`**, classifique a nota da seguinte forma:
+
+         - Se a nota for 7.0 ou maior, imprima "Aprovado!".
+         - Se a nota for maior ou igual a 5.0, mas menor que 7.0, imprima "Recuperação.".
+         - Se a nota for menor que 5.0, imprima "Reprovado.".
+
+        double nota;
+
+        System.out.println("Me informe a nota: ");
+        Scanner sc = new Scanner(System.in);
+        nota = sc.nextDouble();
+
+        if(nota < 0 || nota > 10)
+        {
+            System.out.println("Esse número não é uma nota!");
+        }
+        else if (nota >= 7.0) {
+            System.out.println("Aprovado!");
+        } else if (nota == 5.0) {
+            System.out.println("Recuperação!");
+        }
+        else
+        {
+            System.out.println("Reprovado!");
+        }*/
+
+        /*8. Par ou Ímpar com Operador Ternário**
+
+        Declare uma variável **`numero`**; Utilizando o operador ternário (**`? :`**), crie uma variável String
+        resultado que receba o texto "Par" se o número for par, ou "Ímpar" se for ímpar. Ao final, imprima o resultado.
+
+                **Dica:** O operador de módulo **`%`** (resto da divisão), apresentado no material, é perfeito para isso.
+
+
+        int num;
+        int resultado;
+
+        System.out.println("Me informe um número:");
+        Scanner sc = new Scanner(System.in);
+        num = sc.nextInt();
+
+        resultado = num % 2;
+
+        if(resultado == 0)
+        {
+            System.out.println("Par");
+        }
+        else if(resultado == 1)
+        {
+            System.out.println("Impar");
+        }
+        */
+
+        /*9. Cálculo de Desconto Progressivo**
+
+        Uma loja oferece descontos baseados no valor da compra. Crie um programa que declare uma variável
+
+`double valorCompra = 150.0;` e aplique as seguintes regras usando `if/else if/else`:
+
+        - Compras acima de R$ 200,00 têm 20% de desconto.
+                - Compras entre R$ 100,00 (inclusive) e R$ 200,00 (exclusive) têm 10% de desconto.
+                - Compras abaixo de R$ 100,00 não têm desconto.
+
+                O programa deve usar os operadores aritméticos para calcular e exibir o valor final a ser pago.
+
+        double valorCompra;
+
+        System.out.println("Quanto deu a compra: ");
+        Scanner sc = new Scanner(System.in);
+        valorCompra = sc.nextDouble();
+
+        if(valorCompra > 200)
+        {
+            System.out.println("Você ganhou um desconto de 20%!");
+        }
+        else if(valorCompra > 100)
+        {
+            System.out.println("Tem desconto de 10%!");
+        }
+        else
+        {
+            System.out.println("Não tem desconto!");
+        }*/
+
+    /*10. O Erro da Comparação de Textos**
+
+        Analise o código abaixo. Sem executá-lo, qual será a saída impressa no console? Explique por que o resultado
+        ocorre e, em seguida, corrija o código para que ele compare o conteúdo dos textos corretamente.
+
+```java
+        String senha1 = new String("admin123");
+        String senha2 = new String("admin123");
+
+        System.out.println("As senhas são iguais? " + (senha1 == senha2));
+```
+
+**Dica:** O material alerta que o operador **`==`** compara a referência de memória dos objetos, não o seu conteúdo
+    textual.
+
+        String senha1 = new String("admin123"); //String - Seria um tipo de dado; senha1 - Seria o nome da
+        //variavel; new - Informa que esta sendo criado um objeto; String - Seria o objeto criado; "admin123" - Seria
+        //o valor da string. Sendo assim foi criado uma variavel com o tipo de dado String onde se chama senha1, e o admin123
+        //seria o valor
+
+        String senha2 = new String("admin123");//String - Seria um tipo de dado; senha1 - Seria o nome da
+        //variavel; new - Informa que esta sendo criado um objeto; String - Seria o objeto criado; "admin123" - Seria
+        //o valor da string. Sendo assim foi criado uma variavel com o tipo de dado String onde se chama senha1, e o admin123
+        //seria o valor
+
+        System.out.println("As senhas são iguais? " + (senha1 == senha2)); //Aqui foi criado uma mensagem no console, onde vai
+        //verificar se a senha1 ou 2 são iguais, se for da false se não da true;*/
+
+        /*11. Cálculo de Média Exata**
+
+        Crie um programa que peça ao usuário duas notas inteiras (int) e calcule a média exata entre elas. O desafio
+        é que o resultado deve ser um double e exibir a parte decimal corretamente (ex: a média entre 7 e 8 deve ser
+        7.5, e não 7).
+
+**Dica:** Verifique no material o trecho referente a **Casting
+
+        int nota1;
+        int nota2;
+        double media;
+
+        System.out.println("Me informe as 2 notas!");
+        Scanner sc = new Scanner(System.in);
+        nota1 = sc.nextInt();
+        nota2 = sc.nextInt();
+
+        media = (double)(7 + 8)/2;
+
+        System.out.println("A media seria:" + media);*/
+
+
 
 
 
