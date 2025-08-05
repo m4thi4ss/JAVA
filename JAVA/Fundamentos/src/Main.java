@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
@@ -139,10 +141,16 @@ public class Main {
                 {
                     System.out.println("Isso não é um numero inteiro!")
                 }
-
-
-
          */
+
+       /* ### 1. **Par ou Ímpar**
+
+        > Peça ao usuário que digite um número inteiro e diga se ele é par ou ímpar.
+        >
+        >
+        > ➤ Usa: `if` e operador `%`.
+        >   */
+
 
     }
 }

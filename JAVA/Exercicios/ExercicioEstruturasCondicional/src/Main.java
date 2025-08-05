@@ -307,12 +307,148 @@ Usando uma estrutura **`if/else`**, exiba a mensagem "A tarefa está pendente!" 
 
         media = (double)(7 + 8)/2;
 
-        System.out.println("A media seria:" + media);*/
+        System.out.println("A media seria:" + media);
+
+        int num;
+        int num1;
+
+        do {
+            System.out.println("Me informe o número: ");
+            Scanner sc = new Scanner(System.in);
+            num = sc.nextInt();
+
+            num1 = num % 2;
+
+            if (num1 == 0) {
+                System.out.println("Par");
+            } else if (num1 == 1) {
+                System.out.println("Impar");
+            }
+
+        }while (num < 0);
+*/
+        /*### 2. **Senha simples**
+
+> Peça ao usuário uma senha. Se for igual a "1234", exiba "Acesso concedido", senão, "Acesso negado".
+>
 
 
+        int senhaG;
+        do {
+            System.out.println("Me informe a senha:");
+            Scanner sc = new Scanner(System.in);
+            senhaG = sc.nextInt();
+
+            if (senhaG == 1234) {
+                System.out.println("Acesso liberado!");
+            } else {
+                System.out.println("Senha incorreta. tente novamente");
+            }
+
+        }while(senhaG != 1234);
+
+*/
+       /* ### 3. **Número dentro de intervalo**
+
+                > Pergunte um número e diga se ele está entre 10 e 20 (inclusive).
+                >
+
+        int num;
+
+        System.out.println("Me informe o número: ");
+        Scanner sc = new Scanner(System.in);
+        num = sc.nextInt();
+
+        if (num >= 10 && num <= 20)
+        {
+            System.out.println("Esse número esta dentro do 10 ao 20!");
+        }
+        else
+        {
+            System.out.println("Esse número não esta dentro do 10 ao 20!");
+        }
+/*
+
+   /* ### 4. **Maior entre dois números**
+
+> Peça dois números e diga qual é o maior (ou se são iguais).
+>
+        int num;
+        int num1;
 
 
+        System.out.println("Me informe o número: ");
+        Scanner sc = new Scanner(System.in);
+        num = sc.nextInt();
+        num1 = sc.nextInt();
 
+        if (num > num1)
+        {
+            System.out.println("O numero " + num + " é maior que o " + num1);
+        }
+        else
+        {
+            System.out.println("O numero " + num1 + " é maior que o " + num);
+        }
+
+*/
+
+/*### 5. **Notas e conceito**
+
+> Peça ao usuário uma nota de 0 a 10. Classifique como:
+>
+> - A (nota ≥ 9)
+> - B (nota ≥ 7)
+> - C (nota ≥ 5)
+> - D (nota < 5)
+
+
+        int nota;
+
+        System.out.println("Me informea nota:");
+        Scanner sc = new Scanner(System.in);
+        nota = sc.nextInt();
+
+        if(nota >= 9)
+        {
+            System.out.println("A");
+        }
+        else if (nota >= 7)
+        {
+            System.out.println("B");
+        }
+        else if (nota >= 5)
+        {
+            System.out.println("C");
+        }
+        else
+        {
+            System.out.println("D");
+        }
+        */
+
+        /*### 6. **Verificador de ano bissexto**
+
+                > O usuário digita um ano, e o programa informa se ele é bissexto (dica: divisível por 4, mas com
+                regras para 100 e 400).
+
+
+        int ano;
+
+        System.out.println("Me informe um número:");
+        Scanner sc = new Scanner(System.in);
+        ano = sc.nextInt();
+
+        if ((ano % 4 == 0 && ano % 100 != 0) || (ano % 400 == 0))
+        {
+            System.out.println("O ano é bissexto!");
+        }
+        else
+        {
+            System.out.println("O ano não é bissexto");
+        }
+
+        */
 
     }
 }
