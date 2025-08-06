@@ -450,5 +450,15 @@ Usando uma estrutura **`if/else`**, exiba a mensagem "A tarefa está pendente!" 
 
         */
 
+       /* ### 2. **Número dentro de intervalo**
+
+                > Pergunte um número e diga se ele está entre 10 e 20 (inclusive).
+                > */
+
+
+
+
+
+
     }
 }

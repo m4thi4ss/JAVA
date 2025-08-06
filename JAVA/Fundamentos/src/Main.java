@@ -143,14 +143,34 @@ public class Main {
                 }
          */
 
-       /* ### 1. **Par ou Ímpar**
 
-        > Peça ao usuário que digite um número inteiro e diga se ele é par ou ímpar.
-        >
-        >
-        > ➤ Usa: `if` e operador `%`.
-        >   */
+        /*
+        ESTRUTURAS DE REPETIÇÃO
 
+        WHILE - O While significa "ENQUANTO", sendo enquanto nao for a regra do parametro ele vai continuar rodando o
+        codigo, ele sozinho é diferente do DO, pois primeiro ele executa a informação que esta na variavel, então ele
+        nem executa o bloco de codigo e sim ja do resultado do mesmo usando a informação guardada na varivel antes que
+        ele foi criado.
+        ex.:
+                String nome = "Vini";
+                Scanner sc = new Scanner(System.in)
 
+                 nome.equals = "Fulano";
+                 while(!nome.equals("Vini"))
+                {
+                    System.out.println("Incorreto");
+                    System.ou.println("Me informe o nome novamente: ")
+                    nome = sc.nextLine();
+                 }
+                    ou
+                int num = 1;
+
+                while (num <= 10)
+                {
+                    System.out.println(num);
+                    num++;
+
+        OBS: O os operadores de compração != e == não é usado para texto.
+         */
     }
 }
