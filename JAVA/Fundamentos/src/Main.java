@@ -171,6 +171,44 @@ public class Main {
                     num++;
 
         OBS: O os operadores de compração != e == não é usado para texto.
+
+        DO WHILE - Ele seria a mesma coisa que o While, so que o Do
          */
+        /*
+        VETORES(ARRAY)
+
+        Um Array ele guarda diversas informações dentro dela. Todo array tem um limite de coisas. Por que você precisa
+        guardar uma memoria pra ele.
+        ex.:
+        #Guardando espaco na memoria
+        int[] idades = new int[5];
+        String[] nomes = new String[10];
+
+        Pra verificar uma informacao dentro desse array, voce vai precisar pegar pelo "id" de cada informacao, comecando
+        pelo 0, e indo ate o numero que foi informado, fazendo a conta em quantidade, como por exemplo: se for 5
+        informacoes, o ultimo vai ter "id" - 4.
+        Ex.:
+        #Como guardar as informacoes
+        idades[0] = 12;
+        idades[1] = 11;
+        idades[2] = 10;
+        idades[3] = 9;
+        idades[4] = 8;
+
+        #Pra mostrar seria
+        System.out.println(idades[1])
+
+        #Mostrar diversos id com FOR
+        for(int i = 0; i < 5; i++)
+        {
+            System.out.println(idades[i])
+        }
+
+
+
+
+         */
+
+
     }
 }

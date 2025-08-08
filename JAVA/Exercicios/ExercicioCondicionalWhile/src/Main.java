@@ -1,3 +1,6 @@
+import com.sun.source.tree.WhileLoopTree;
+
+import java.util.Random;
 import java.util.Scanner;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -97,11 +100,73 @@ Crie um programa que use um laço while para imprimir os números de 1 a 10 no c
         acerte o número. No final, mostre quantas tentativas foram necessárias.
 
                 *Dica: Para gerar um número aleatório, você pode usar `int
-                numeroSecreto = new Random().nextInt(100) + 1;`* */
+                numeroSecreto = new Random().nextInt(100) + 1;
 
-         int num;
+        int num = 0;
+
+        int numeroSecreto = new Random().nextInt(100) + 1;
+
+        do{
+            System.out.println("Me informe o número que foi escolhido pela maquina: ");
+            Scanner sc = new Scanner(System.in);
+            num = sc.nextInt();
+
+            if(num == numeroSecreto)
+            {
+                System.out.println("Parabéns, você acertou!!!");
+            }
+            else if (num > numeroSecreto)
+            {
+                System.out.println("Você errou! O numero informado é maior!");
+            }
+            else if (num < numeroSecreto)
+            {
+                System.out.println("Você errou! O numero informado é menor!");
+            }
+        } while(num != numeroSecreto);*/
+
+        /*
+        **4 - Simulador de Caixa Eletrônico (Saques)**
+
+Crie um programa que simule um caixa eletrônico.
+
+Inicie com um saldo em conta (por exemplo, R$ 2000,00). Solicite ao usuário que insira o valor que deseja sacar.
+
+O laço while deve continuar executando e permitindo saques enquanto o saldo da conta for positivo.
+
+Regras:
+
+1. Não permita saques de valores maiores que o saldo atual. Se o usuário tentar, informe que o saldo é insuficiente.
+2. O programa encerra (o laço `while` termina) quando o saldo se torna zero ou negativo.
+3. Ao final de cada saque, mostre o novo saldo.
 
 
+        double saldo = 2000.00;
+        double saque;
+
+
+        System.out.println("Você tem o saldo de " + "R$" + saldo + ". Qual valor você deseja sacar: ");
+
+        do
+        {
+
+            Scanner sc = new Scanner(System.in);
+            saque = sc.nextDouble();
+
+
+            if(saque <= saldo)
+            {
+                saldo = saldo - saque;
+                System.out.println("Seu saldo foi atualizado para " + "R$" + saldo + ". Deseja sacar qual valor:");
+            }
+            else if(saque > saldo)
+            {
+                System.out.println("Saldo insuficiente! Você tem o saldo de " + saldo + ". Qual seria o valor do " +
+                        "saque:");
+            }
+
+
+        }while(saldo != 0);
 
         /*
         **1 - Repetição de Processo**
@@ -121,5 +186,39 @@ Escreva um programa que imprime a mensagem "Executando o processo..." e, em segu
             simNao = sc.nextLine();
         }while(!simNao.equals("S"));
 */
+/*
+**2 - Somador de Números**
+
+Faça um programa que peça ao usuário para inserir números inteiros. O programa deve somar todos os números inseridos.
+O laço deve parar quando o usuário inserir o número 0. No final, mostre a soma total dos números inseridos.
+
+
+        int num;
+        int resultado = 0;
+
+        System.out.println("Me informe um número: ");
+        Scanner sc = new Scanner(System.in);
+        num = sc.nextInt();
+
+        do{
+
+            if(num > 0)
+            {
+                System.out.println("Me informe o proximo numero: ");
+                num = sc.nextInt();
+                resultado = resultado + num;
+            }
+            else if(num == 0)
+            {
+                System.out.println("Segue soma de todos números informados: " + resultado);
+            }
+            else if (num < 0)
+            {
+                System.out.println("Somente números inteiros!");
+                System.out.println("Me informe o número inteiro novamente:");
+                num = sc.nextInt();
+            }
+        }while(num != 0);*/
+
     }
 }
