@@ -2,6 +2,7 @@ import com.sun.source.tree.WhileLoopTree;
 
 import java.util.Random;
 import java.util.Scanner;
+import java.util.zip.DeflaterOutputStream;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -196,19 +197,18 @@ O laço deve parar quando o usuário inserir o número 0. No final, mostre a som
         int num;
         int resultado = 0;
 
-        System.out.println("Me informe um número: ");
-        Scanner sc = new Scanner(System.in);
-        num = sc.nextInt();
+
 
         do{
+            System.out.println("Me informe um número: ");
+            Scanner sc = new Scanner(System.in);
+            num = sc.nextInt();
 
-            if(num > 0)
-            {
-                System.out.println("Me informe o proximo numero: ");
-                num = sc.nextInt();
-                resultado = resultado + num;
-            }
-            else if(num == 0)
+            resultado = num + resultado;
+
+            System.out.println(resultado);
+
+            if(num == 0)
             {
                 System.out.println("Segue soma de todos números informados: " + resultado);
             }
@@ -218,7 +218,173 @@ O laço deve parar quando o usuário inserir o número 0. No final, mostre a som
                 System.out.println("Me informe o número inteiro novamente:");
                 num = sc.nextInt();
             }
-        }while(num != 0);*/
+        }while(num != 0);
+*/
+/*
+**3 - Validação de Senha**
+
+Crie um sistema de cadastro simples que peça ao usuário para criar uma senha. O programa deve usar um laço do-while para
+*  garantir que a senha inserida tenha pelo menos 8 caracteres. Enquanto a senha não atender a esse critério, o programa
+*  deve informar "Senha muito curta. A senha deve ter no mínimo 8 caracteres." e pedir a senha novamente. Quando uma
+* senha válida for inserida, exiba "Senha cadastrada com sucesso!".
+
+*Dica: Você pode verificar o tamanho de uma String com o método `.length()`.*
+
+
+
+        String senha;
+
+        do {
+            System.out.println("Me informe a senha:");
+            Scanner sc = new Scanner(System.in);
+            senha = sc.nextLine();
+
+            if (senha.length() < 9)
+            {
+                System.out.println("Senha cadastrada!");
+            }
+            else
+            {
+                System.out.println("Senha maior que 8 caracteres!");
+            }
+
+        }while (senha.length() > 8);
+
+    } */
+        /*
+        **4 - Calculadora Interativa**
+
+Desenvolva uma calculadora que realiza as quatro operações básicas (soma, subtração, multiplicação, divisão). O programa
+*  deve:
+
+1. Apresentar um menu com as opções e a opção de sair.
+2. Pedir ao usuário para escolher uma operação.
+3. Pedir ao usuário para inserir dois números.
+4. Realizar a operação e mostrar o resultado.
+5. O laço `do-while` deve garantir que, após cada operação, o menu seja exibido novamente, até que o usuário escolha a
+* opção "Sair".
+
+
+        double num = 0;
+        double num2 = 0;
+        double calculo = 0;
+        double menu;
+
+        do {
+            System.out.println("Menu \n 1 - Soma\n 2 - Resto\n 3 - Subtracao\n 4 - Divisao\n 5 - Multiplicacao\n 6 - Sair");
+            Scanner sc = new Scanner(System.in);
+            menu = (int) sc.nextDouble();
+
+
+            if (menu == 1) {
+                System.out.println("Me informe o primeiro numero:");
+                Scanner scc = new Scanner(System.in);
+                num = scc.nextDouble();
+
+                System.out.println("Me informe o segundo numero:");
+                Scanner sccc = new Scanner(System.in);
+                num2 = sccc.nextDouble();
+
+                calculo = num + num2;
+
+                System.out.println("O resultado seria: " + calculo);
+
+            } else if (menu == 2) {
+                System.out.println("Me informe o primeiro numero:");
+                Scanner sc1 = new Scanner(System.in);
+                num = sc1.nextDouble();
+
+                System.out.println("Me informe segundo numero:");
+                Scanner sc2 = new Scanner(System.in);
+                num = sc2.nextDouble();
+
+                calculo = num % num2;
+
+                System.out.println("O resultado seria: " + calculo);
+            } else if (menu == 3) {
+                System.out.println("Me informe o primeiro numero:");
+                Scanner sc3 = new Scanner(System.in);
+                num = sc3.nextDouble();
+
+                System.out.println("Me informe o segundo numero:");
+                Scanner sc4 = new Scanner(System.in);
+                num2 = sc4.nextDouble();
+
+                calculo = num - num2;
+
+                System.out.println("O resultado seria: " + calculo);
+
+            } else if (menu == 4) {
+                System.out.println("Me informe o primeiro numero:");
+                Scanner sc5 = new Scanner(System.in);
+                num = sc5.nextDouble();
+
+                System.out.println("Me informe o segundo numero:");
+                Scanner sc6 = new Scanner(System.in);
+                num2 = sc6.nextDouble();
+
+                calculo = num / num2;
+
+                System.out.println("O resultado seria: " + calculo);
+            } else if (menu == 5) {
+                System.out.println("Me informe o primeiro numero:");
+                Scanner sc7 = new Scanner(System.in);
+                num = sc7.nextDouble();
+
+                System.out.println("Me informe o segundo numero:");
+                Scanner sc8 = new Scanner(System.in);
+                num2 = sc8.nextDouble();
+
+                calculo = num * num2;
+
+                System.out.println("O resultado seria: " + calculo);
+            } else if (menu < 1 || menu > 6) {
+                System.out.println("Esse numero nao tem no menu!");
+            } else {
+                System.out.println("Muito obrigado, ate logo!");
+            }
+
+        } while (menu != 6); */
+
+        /*
+        **1 - Contagem**
+
+Escreva um programa que use um laço for para fazer uma contagem de 1 até 10 e, no final, imprima "Tempo!".
+
+        for(int i = 1; i < 11; i++)
+        {
+            System.out.println(i);
+        }
+        System.out.println("Tempo!");*/
+
+        /*
+        **2 - Tabuada de Multiplicação**
+
+Peça ao usuário para inserir um número inteiro. Em seguida, use um laço for para calcular e imprimir a tabuada de
+* multiplicação desse número, do 1 ao 10.
+
+Exemplo de saída para o número 7:
+
+        System.out.println("Me informe o primeiro numero: ");
+        Scanner sc = new Scanner(System.in);
+        int num = sc.nextInt();
+
+        for(int i = 1; i < 11; i++)
+        {
+            int resultado = num * i;
+            System.out.println(i + "*" + num + "=" + resultado );
+        }
+        */
+        /*
+        **3 - Cálculo de Fatorial**
+
+Crie um programa que peça ao usuário um número inteiro não negativo e calcule seu fatorial. O fatorial de um número n
+* (representado por n!) é o produto de todos os inteiros positivos menores ou iguais a n.
+* Por exemplo, 5! = 5 * 4 * 3 * 2 * 1 = 120. Use um laço for para realizar a multiplicação.
+
+*Dica: Comece com uma variável de resultado igual a 1 e multiplique-a pelos números de `n` até 1.*
+         */
+        
 
     }
 }

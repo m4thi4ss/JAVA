@@ -20,5 +20,30 @@ public class Main {
             System.out.println(num[i]);
         }
         */
+
+        /*### **2. Preencher e listar 10 elementos**
+
+                Crie um vetor de 10 posições do tipo `int`. Solicite ao usuário que informe os 10 valores e,
+                ao final, **exiba todos os números digitados** usando um laço `for`.
+         */
+
+        int[] num = new int[10];
+
+        num[0] = 10;
+        num[1] = 20;
+        num[2] = 30;
+        num[3] = 40;
+        num[4] = 50;
+        num[5] = 60;
+        num[6] = 70;
+        num[7] = 80;
+        num[8] = 90;
+        num[9] = 100;
+
+        for(int i = 0; i < 10; i++)
+        {
+            System.out.println(num[i]);
+        }
+
     }
 }
