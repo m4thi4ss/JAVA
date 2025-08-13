@@ -204,12 +204,122 @@ public class Main {
             System.out.println(idades[i])
         }
 
-        #
+        FUNCOES
 
+        Na funcao ele tem o escopo, classe, tipo de dado e nome da variavel, tendo o parametro que seria os valores que
+        variavel vai guardar e no final teria o return que seria basicamente o metodo daquela funcao.
+        ex.:
 
+        public class Main{
+        public static int somar( int valor1, int valor2)
+        {
+            return valor1 + valor2;
+        }
+
+        O void ele e usado quando voce nao vai ter return, ele sempre vai ter um valor acao chumbada e nunca vai
+        poder ser usado em outra classe.
+        ex.:
+
+        public class Main{
+        public static void subtrair(int valor1, int valor2)
+        {
+            System.out.println(valor1 - valor2);
+        }
+
+        Ja sem ele, voce ja coloca o tipo de dado no lugar dele e ja faz um return pra retornar um metodo, fazendo com
+        que use ele futuramente.
+
+        Alguns exemplos:
+
+        /*1. Exibir uma mensagem de boas-vindas
+Crie uma função chamada mostrarMensagem que imprima no console a seguinte frase:
+"Bem-vindo(a) ao programa!"
+Dicas:
+A função não deve ter parâmetros.
+A função não precisa retornar nenhum valor (tipo void).
+Exemplo esperado ao chamar a função:
+mostrarMensagem(); // Saída: Bem-vindo(a) ao programa!
+
+public class Main { //public - Aqui esta informando que qualquer um pode ver essa classe; class - Esta informando que
+    //uma classe; Main - Seria o nome da Classe;
+    public static void mostrarMensagem() {
+        System.out.println("Bem-vindo(a) ao program!");
+    }
+    public static void main(String[] args)
+    {
+        mostrarMensagem();
+    }
+
+}*/
+
+/*### **2. Método com Retorno**
+
+Um método pode retornar um valor usando a palavra-chave `return`. O tipo de retorno é especificado antes do nome
+do método.
+
+**Exemplo:
+
+public class Main {
+    public static int somar (int num1, int num2)
+    {
+        return  num1 + num2;
+    }
+    public static void main(String[] args)
+    {
+        int resultado = somar(5, 2);
+        System.out.println("Resultado da soma:" + resultado);
+    }
+
+}*/
+/*
+### **3. Método com Parâmetros**
+
+Os parâmetros permitem passar valores para o método, tornando-o reutilizável e flexível. Em Java, tipos como
+`String` são classes, por isso se escreve com `S` maiúsculo.
+
+- O método `exibirMensagem` recebe um parâmetro `nome` do tipo `String`.
+- Ao chamá-lo, passamos valores diferentes como argumento.
+
+public class Main{
+    public static void exibirMensagem (String nome ){
+        System.out.println("Bem-vindo " + nome + "!");
+    }
+    public static void main(String[] args){
+       exibirMensagem("Joao");
+    }
+}
+*/
+/*
+### **4. Método com Múltiplos Parâmetros**
+
+Podemos passar vários parâmetros para um método, separando-os por vírgulas.
+
+**Exemplo:**
+calcularMedia recebe dois parâmetros do tipo double e retorna a média.
+
+public class Main {
+    public static double calcularMedia(double num1, double num2)
+    {
+        return (num1 + num2) / 2;
+    }
+    public static void main(String[] args){
+        double resultado = calcularMedia(5, 6);
+        System.out.println("O resultado da media seria:" + resultado);
+    }
+}
+
+        }
+
+Pra fazer um funcao e sempre bom, fazer um esqueleto:
+
+1 - Criar esqueleto da funcao;
+2 - Definir se tem retirno ou nao;
+3 - Definir se tem parametro ou nao;
+4 - Escrever o codigo da funcao (o que faz);
 
          */
+/*
 
-
+ */
     }
 }

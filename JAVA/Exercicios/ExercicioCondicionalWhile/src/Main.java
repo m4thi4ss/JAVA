@@ -384,7 +384,18 @@ Crie um programa que peça ao usuário um número inteiro não negativo e calcul
 
 *Dica: Comece com uma variável de resultado igual a 1 e multiplique-a pelos números de `n` até 1.*
          */
-        
+        int num = 1;
+
+        do{
+            System.out.println("Me informe um numero:");
+            Scanner sc = new Scanner(System.in);
+            num = sc.nextInt();
+
+            for (int i = num; i > 1)
+            {
+
+            }
+        }
 
     }
 }
